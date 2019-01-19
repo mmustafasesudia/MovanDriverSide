@@ -31,8 +31,6 @@ import com.google.firebase.iid.FirebaseInstanceId;
 import org.json.JSONException;
 import org.json.JSONObject;
 
-import java.io.IOException;
-
 import static com.google.firebase.analytics.FirebaseAnalytics.Event.LOGIN;
 
 
@@ -132,11 +130,7 @@ public class RegisterFragment extends Fragment implements View.OnClickListener {
 
         if (NetworkConnectivityClass.isNetworkAvailable(getActivity())) {
             //senddata(et_driver_phone_no_reg);
-            try {
-                sendData();
-            } catch (IOException e) {
-                e.printStackTrace();
-            }
+            sendData();
         } else {
 
             Snackbar.make(getActivity().findViewById(android.R.id.content), "Internet not connected", Snackbar.LENGTH_SHORT).show();
@@ -167,7 +161,6 @@ public class RegisterFragment extends Fragment implements View.OnClickListener {
                                 error = response.getBoolean("error");
                                 //Toast.makeText(getActivity(), "" + msg, Toast.LENGTH_LONG).show();
                                 if (!error) {
-
                                     Intent intent = new Intent(getActivity(), Drawer.class);
                                     SharedPreferences preferences = getActivity().getSharedPreferences("PREFRENCE", Context.MODE_PRIVATE);
                                     SharedPreferences.Editor editor = preferences.edit();
@@ -179,7 +172,6 @@ public class RegisterFragment extends Fragment implements View.OnClickListener {
                                     editor.commit();
                                     startActivity(intent);
                                     getActivity().finish();
-
                                 }
                             } catch (JSONException e) {
                                 e.printStackTrace();

@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "364568451410",
+    "firebase_url": "https://movandriverside-a2c2a.firebaseio.com",
+    "project_id": "movandriverside-a2c2a",
+    "storage_bucket": "movandriverside-a2c2a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:364568451410:android:27a84a4ad0bd1623",
+        "android_client_info": {
+          "package_name": "com.example.admin.movanuser"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "364568451410-5lk2pl6mmq6m45bdhcmo0f9cicpctukc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBF5HosimliDjowpsdbmN728qa6YeZKiQo"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
